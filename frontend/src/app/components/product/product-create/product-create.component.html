@@ -1,0 +1,24 @@
+<!-- <p [id]="atributoLegal">product-create works!</p> --> <!-- Nesse caso com o colchetes, da para fazer um binding de atributo, ou seja o valor que esta presente na variavel "atributoLegal" sera o id da tag, nesse caso entao o id dessa tag p sera "qualquer" que eh o valor presente na variavel "atributoLegal" -->
+
+<!-- <button (click)="fazerAlgo()">Fazer Algo!</button> --> <!-- Para que seja reconhecido como um evento, o click deve ser envolvido por parenteses e estar ligado a uma funcao. Isso eh chamado binding de evento.-->
+
+<mat-card>
+    <mat-card-title>Novo Produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="product.name" name="name"> <!-- Esse comando do ngModel eh referente ao two way binding, ou mudar aqui no HTML, tambem ira alterar o valor la no TS. -->
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preco (R$)" [(ngModel)]="product.price" name="price">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="createProduct()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()" >
+        Cancelar
+    </button>
+
+</mat-card>

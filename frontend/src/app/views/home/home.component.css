@@ -1,0 +1,9 @@
+.home .title{
+    font-size: 3rem; /* rem eh uma boa unidade de medida, pois eh relativo ao browser de cada pessoa, nao eh uma unidade absoluta como px. */
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.home .subtitle {
+    font-size: 1.1rem /* em eh relativo a classe pai. */
+}

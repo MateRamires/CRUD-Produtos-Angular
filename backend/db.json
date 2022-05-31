@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "name": "Caneta BIC Azul",
+      "price": 3.99,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Notebook Mac Pro",
+      "price": 12000.89
+    },
+    {
+      "name": "Geladeira Plus ",
+      "price": 3199.99,
+      "id": 3
+    },
+    {
+      "name": "Teste",
+      "price": 123.99,
+      "id": 4
+    }
+  ]
+}
